@@ -1,0 +1,15 @@
+#navbarSupportedContent{
+    display: flex;
+    justify-content: flex-end;
+    max-height: 70px;
+
+}
+
+nav{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100% !important;
+    left: 0;
+    z-index: 20;
+}

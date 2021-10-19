@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Material Design for Bootstrap</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+    />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="css/mdb.min.css" />
+</head>
+
+<body>
+    
+    
+      <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark " style="background-color:#61177c;">
+  <!-- Container wrapper -->
+  <div class="container-fluid">
+
+    <!-- Navbar brand -->
+    <a class="navbar-brand" href="#"><img src="https://static.platzi.com/ui/assets/image/isotipoPlatzi093f27a2fb00922bb105.png" alt="" srcset=""> Platzi</a>
+
+    <!-- Toggle button -->
+    <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        <!-- Link -->
+        <li class="nav-item">
+          <a class="nav-link" href="./practice1.html">Excercise 1</a>
+          </li>
+          <li> 
+          <a class="nav-link" href="./practice2.html">Excercise 2</a> 
+        </li>
+
+      </ul>
+
+    </div>
+  </div>
+  <!-- Container wrapper -->
+</nav>
+<!-- Navbar -->
+<div class="container">
+        <div class="h-100 d-flex justify-content-around align-items-center pt-5">
+ <div class="d-flex flex-row"> 
+       <form class="d-flex">
+
+     
+   
+      
+        <!-- 2 column grid layout for inline styling -->
+        <div class="row mb-4">
+          <div class="col-10 p-auto bloque_coordenadas">
+            <!-- Checkbox -->
+           
+              <div class="input-group m-2 ejercicio1" >
+                <input type="number" class="form-control " id="pointX1" value="0" placeholder="pointX" aria-label="PointX">
+                <span class="input-group-text">,</span>
+                <input type="number" class="form-control" id="pointY1" value="0" placeholder="pointY" aria-label="pointY">
+               </div>
+              <div class="input-group m-2">
+                <input type="number" class="form-control" id="pointX2" value="0" placeholder="pointX" aria-label="PointX">
+                <span class="input-group-text">,</span>
+                <input type="number" class="form-control" id="pointY2" value="0" placeholder="pointY" aria-label="pointY">
+              </div>
+              <div class="input-group m-2">
+                <input type="number" class="form-control" id="pointX3" value="0" placeholder="pointX" aria-label="PointX">
+                <span class="input-group-text">,</span>
+                <input type="number" class="form-control" id="pointY3" value="0" placeholder="pointY" aria-label="pointY">
+              </div>
+              <div class="input-group m-2">
+                <input type="number" class="form-control" id="pointX4" value="0" placeholder="pointX" aria-label="PointX">
+                <span class="input-group-text">,</span>
+                <input type="number" class="form-control" id="pointY4" value="0" placeholder="pointY" aria-label="pointY">
+              </div>
+              <div class="input-group m-2">
+                <input type="number" class="form-control" id="pointX5" value="0" placeholder="pointX" aria-label="PointX">
+                <span class="input-group-text">,</span>
+                <input type="number" class="form-control" id="pointY5" value="0" placeholder="pointY" aria-label="pointY">
+              </div>
+
+              <button type="button" id="submit2" class="btn btn-primary btn-block">Draw it!</button>
+              <input type="buton" id="clear" class="btn btn-danger btn-block" value="Clear">
+
+                </div>
+      
+         
+        </div>
+      
+        <!-- Submit button -->
+    
+      </form>
+ 
+<canvas id="my-canvas" width="800" height="500" class="d-flex"></canvas>
+
+ <script src="js/canvas.js"></script>
+ <script src="js/events2.js"></script>
+<script type="text/javascript" src="js/mdb.min.js"></script>
+
+ 
+</body>
+
+</html>
