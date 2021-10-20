@@ -6,14 +6,22 @@ let pointX;
 let pointY;
 let prevX;
 let prevY;
+
+
+
 function paintPoint(e) {
 
     pointX = document.getElementById("pointX");
     pointY = document.getElementById("pointY");
+    console.log(pointY.value);
     
-    if(parseFloat(pointX.value) && parseFloat(pointY.value)){
+    if(Number(pointX.value) && Number(pointY.value)){
         ctx.beginPath();
-        ctx.arc(parseFloat(pointX.value),-parseFloat(pointY.value),10,0*Math.PI,2*Math.PI);
+       ctx.translate(0, 300)
+    ctx.fillStyle = "blue";
+
+        ctx.arc(Number(pointX.value),(-Number(pointY.value)),10,0*Math.PI,2*Math.PI);
+
         ctx.fill();
         ctx.stroke();
         

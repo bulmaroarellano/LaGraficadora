@@ -56,7 +56,7 @@
 <!-- Navbar -->
 <div class="container">
         <div class="h-100 d-flex justify-content-around align-items-center pt-5">
- <div class="d-flex flex-row"> 
+ <div class="d-flex flex-row" id="contenedor"> 
        <form class="d-flex">
 
      
@@ -64,32 +64,49 @@
       
         <!-- 2 column grid layout for inline styling -->
         <div class="row mb-4">
-          <div class="col-10 p-auto bloque_coordenadas">
+          <div class="col-5 p-auto bloque_coordenadas">
             <!-- Checkbox -->
            
               <div class="input-group m-2 ejercicio1" >
-                <input type="number" class="form-control" id="pointX" value="0" placeholder="pointX" aria-label="PointX">
+                <input type="number" class="form-control" id="pointX" value="" required placeholder="pointX" aria-label="PointX">
                 <span class="input-group-text">,</span>
-                <input type="number" class="form-control" id="pointY" value="0" placeholder="pointY" aria-label="pointY">
+                <input type="number" class="form-control" id="pointY" value="" required placeholder="pointY" aria-label="pointY">
               </div>
              
               <button type="button" id="submit" class="btn btn-primary btn-block">Draw it!</button>
               <input type="buton" id="clear" class="btn btn-danger btn-block" value="Clear">
-              <p id='showCoords'></p>
-
+<
+              </div>
                 </div>
-      
+         
+                  
          
         </div>
       
         <!-- Submit button -->
     
       </form>
- 
-<canvas id="my-canvas" width="500" height="500" class="" onclick="showCoords(event)"></canvas>
- 
+ <div id="contenedorCanvas"> 
+<canvas id="canvas1" width="800" height="300" class="" onclick="showCoords(event)"></canvas>
+</div>
 
-
+</div><div class="row">
+  <div class="instructions col-12">
+  <h3>Instructions</h3>
+  <p> To graph a pair of coordinates in the (x, y) plane do the following:</p>
+  <ul>
+  <li>
+    Insert a pair of coordinates (valid numerical values) in the fields with the legend Point X and Point Y, as appropriate.
+  </li>
+  <li>
+    Click on the button labeled "DRAW IT!".</li>
+     <p>
+    Considerations:<p>
+      <li>
+    The coordinates must be within the range of 1 to 800 for the X axis and between 1 and 300 for the Y axis.</li><li>
+    Any non-numerical data or data outside the established ranges mentioned in point 1 will prevent the correct operation of the algorithm.</li>
+    <li>If you want to restart and insert a pair of new coordinates then click on the "CLEAR" button</li>
+  </ul></dib>
  <script src="js/canvas.js"></script>
  <script src="js/events.js"></script>
 <script type="text/javascript" src="js/mdb.min.js"></script>
