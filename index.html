@@ -1,117 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Material Design for Bootstrap</title>
-    <!-- MDB icon -->
-    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
-    <!-- Google Fonts Roboto -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
-    />
-    <!-- MDB -->
-    <link rel="stylesheet" href="css/custom.css" />
-    <link rel="stylesheet" href="css/mdb.min.css" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>LaGraficadora - Platzi Master</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+  <!-- MDB -->
+  <link rel="stylesheet" href="css/custom.css" />
+  <link rel="stylesheet" href="css/mdb.min.css" />
 </head>
-
 <body>
-    
-    
-      <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark " style="background-color:#61177c;">
-  <!-- Container wrapper -->
-  <div class="container-fluid">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark " style="background-color:#61177c;">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+      <!-- Navbar brand -->
+      <a class="navbar-brand" href="#"><img
+          src="https://static.platzi.com/ui/assets/image/isotipoPlatzi093f27a2fb00922bb105.png" alt="" srcset="">
+        Platzi</a>
 
-    <!-- Navbar brand -->
-    <a class="navbar-brand" href="#"><img src="https://static.platzi.com/ui/assets/image/isotipoPlatzi093f27a2fb00922bb105.png" alt="" srcset=""> Platzi</a>
-
-    <!-- Toggle button -->
-    <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <i class="fas fa-bars"></i>
-    </button>
-
-    <!-- Collapsible wrapper -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-        <!-- Link -->
-        <li class="nav-item">
-          <a class="nav-link" href="./index.html">Excercise 1</a>
+      <!-- Toggle button -->
+      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <!-- Link -->
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Excercise 1</a>
           </li>
-          <li> 
-          <a class="nav-link" href="./practice2.html">Excercise 2</a> 
-        </li>
-
-      </ul>
-
+          <li>
+            <a class="nav-link" href="./practice2.html">Excercise 2</a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-  <!-- Container wrapper -->
-</nav>
-<!-- Navbar -->
-<div class="container">
-        <div class="h-100 d-flex justify-content-around align-items-center pt-5">
- <div class="d-flex flex-row" id="contenedor"> 
-       <form class="d-flex">
-
-     
-   
-      
-        <!-- 2 column grid layout for inline styling -->
-        <div class="row mb-4">
-          <div class="col-5 p-auto bloque_coordenadas">
-            <!-- Checkbox -->
-           
-              <div class="input-group m-2 ejercicio1" >
-                <input type="number" class="form-control" id="pointX" value="" required placeholder="pointX" aria-label="PointX">
+    <!-- Container wrapper -->
+  </nav>
+  <!-- Navbar -->
+  <div class="container">
+    <div class="h-100 d-flex justify-content-around align-items-center pt-5">
+      <div class="d-flex flex-row" id="contenedor">
+        <form class="d-flex">
+<!-- 2 column grid layout for inline styling -->
+          <div class="row mb-4">
+            <div class="col-5 p-auto bloque_coordenadas">
+              <!-- Checkbox -->
+              <div class="input-group m-2 ejercicio1">
+                <input type="number" class="form-control" id="pointX" value="" required placeholder="pointX"
+                  aria-label="PointX">
                 <span class="input-group-text">,</span>
-                <input type="number" class="form-control" id="pointY" value="" required placeholder="pointY" aria-label="pointY">
+                <input type="number" class="form-control" id="pointY" value="" required placeholder="pointY"
+                  aria-label="pointY">
               </div>
-             
               <button type="button" id="submit" class="btn btn-primary btn-block">Draw it!</button>
               <input type="buton" id="clear" class="btn btn-danger btn-block" value="Clear">
-<
-              </div>
-                </div>
-         
-                  
-         
-        </div>
-      
-        <!-- Submit button -->
-    
+            </div>
+          </div>
+         </div>
+      <!-- Submit button -->
       </form>
- <div id="contenedorCanvas"> 
-<canvas id="canvas1" width="800" height="300" class="" onclick="showCoords(event)"></canvas>
-</div>
-
-</div><div class="row">
-  <div class="instructions col-12">
-  <h3>Instructions</h3>
-  <p> To graph a pair of coordinates in the (x, y) plane do the following:</p>
-  <ul>
-  <li>
-    Insert a pair of coordinates (valid numerical values) in the fields with the legend Point X and Point Y, as appropriate.
-  </li>
-  <li>
-    Click on the button labeled "DRAW IT!".</li>
-     <p>
-    Considerations:<p>
-      <li>
-    The coordinates must be within the range of 1 to 800 for the X axis and between 1 and 300 for the Y axis.</li><li>
-    Any non-numerical data or data outside the established ranges mentioned in point 1 will prevent the correct operation of the algorithm.</li>
-    <li>If you want to restart and insert a pair of new coordinates then click on the "CLEAR" button</li>
-  </ul></dib>
- <script src="js/canvas.js"></script>
- <script src="js/events.js"></script>
-<script type="text/javascript" src="js/mdb.min.js"></script>
-
- 
-</body>
-
+      <div id="contenedorCanvas">
+        <canvas id="canvas1" width="800" height="300" class="" onclick="showCoords(event)"></canvas>
+      </div>
+    </div>
+    <div class="row">
+      <div class="instructions col-12">
+        <h3>Instructions</h3>
+        <p> To graph a pair of coordinates in the (x, y) plane do the following:</p>
+        <ul>
+          <li>
+            Insert a pair of coordinates (valid numerical values) in the fields with the legend Point X and Point Y, as
+            appropriate.
+          </li>
+          <li>
+            Click on the button labeled "DRAW IT!".</li>
+          <p>
+            Considerations:
+          <p>
+            <li>
+              The coordinates must be within the range of 1 to 800 for the X axis and between 1 and 300 for the Y axis.
+            </li>
+            <li>
+              Any non-numerical data or data outside the established ranges mentioned in point 1 will prevent the
+              correct operation of the algorithm.</li>
+            <li>If you want to restart and insert a pair of new coordinates then click on the "CLEAR" button</li>
+        </ul>
+        </div>
+        <script src="js/canvas.js"></script>
+        <script src="js/events.js"></script>
+        <script type="text/javascript" src="js/mdb.min.js"></script>
+     </body>
 </html>
